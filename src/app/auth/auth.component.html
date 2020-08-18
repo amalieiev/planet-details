@@ -1,0 +1,14 @@
+<mat-card>
+  <form [formGroup]="authForm">
+    <mat-form-field class="full-width">
+      <mat-label>Please enter your email address</mat-label>
+      <input matInput formControlName="email">
+      <mat-error *ngIf="email.errors?.required && email.touched">Email is required</mat-error>
+      <mat-error *ngIf="email.errors?.email && email.touched">Email is invalid</mat-error>
+    </mat-form-field>
+
+    <button class="mt-1" mat-raised-button color="primary" (click)="submitHandler()" [disabled]="authForm.invalid">Submit</button>
+  </form>
+</mat-card>
+
+
