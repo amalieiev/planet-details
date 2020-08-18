@@ -1,0 +1,18 @@
+<section *ngIf="details$ | async as details" class="px-1">
+  <h2>{{ details.name }}</h2>
+  <div class="flex direction-row">
+    <div class="flex details-image" style="background-image: url({{ details.image }})"></div>
+    <div class="flex flex-1 direction-row">
+      <div class="px-1">
+        <p>Region:</p>
+        <p>System:</p>
+        <p>Description:</p>
+      </div>
+      <div class="px-1">
+        <p>{{ details.region }}</p>
+        <p>{{ details.system }}</p>
+        <p>{{ details.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
