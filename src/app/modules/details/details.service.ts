@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
-import { Planet } from '../common/models/planet';
+import { Planet } from '../../models/planet';
 
 
 

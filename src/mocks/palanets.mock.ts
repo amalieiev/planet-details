@@ -1,4 +1,4 @@
-import { Planet } from '../app/common/models/planet';
+import { Planet } from '../app/models/planet';
 
 export const planetsMock: Planet[] = [
   {

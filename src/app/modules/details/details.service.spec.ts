@@ -2,9 +2,9 @@ import { TestBed, async } from '@angular/core/testing';
 import { HttpClient } from '@angular/common/http';
 import { of } from 'rxjs';
 import { DetailsService } from './details.service';
-import { Planet } from '../common/models/planet';
+import { Planet } from '../../models/planet';
 import { ActivatedRoute } from '@angular/router';
-import { planetsMock } from '../../mocks/palanets.mock';
+import { planetsMock } from '../../../mocks/palanets.mock';
 
 describe('DetailsService', () => {
   let httpClientMock: any;

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PlanetsService } from './planets.service';
 import { Observable } from 'rxjs';
-import { Planet } from '../common/models/planet';
+import { Planet } from '../../models/planet';
 
 @Component({
   selector: 'app-planets',

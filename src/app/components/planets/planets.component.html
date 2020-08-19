@@ -1,0 +1,11 @@
+<div class="flex direction-col h100">
+  <h2>Planets</h2>
+  <ul class="flex-1 overflow-auto">
+    <li *ngFor="let planet of planets$ | async" class="mt-1">
+      <a routerLink="/details/{{ planet.name }}" target="_blank">
+        <app-planet-card [planet]="planet"></app-planet-card>
+      </a>
+    </li>
+  </ul>
+</div>
+

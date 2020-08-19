@@ -2,7 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
 import { Router, UrlTree } from '@angular/router';
-import { StorageService } from '../common/services/storage.service';
+import { StorageService } from '../../services/storage.service';
 
 describe('AuthService', () => {
   let storageServiceMock: any;
