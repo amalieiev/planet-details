@@ -1,0 +1,8 @@
+<form [formGroup]="authForm" class="flex direction-col align-start mt-1">
+  <label>Please enter your email address</label>
+  <input formControlName="email" class="mt-1">
+  <span *ngIf="email.errors && email.touched" class="error-message mt-1">Please enter a valid email address</span>
+  <button class="submit-button mt-1" (click)="submitHandler()" [disabled]="authForm.invalid">Submit</button>
+</form>
+
+
